@@ -1,9 +1,7 @@
 # (Boilerplate) Real time private chatting app using Angular Nodejs mongodb and Socket.io
 This a boilerplate For [Real time private chatting app using Angular Nodejs mongodb and Socket.io](https://github.com/ShankyTiwari/Real-time-private-chatting-app-using-Angular-Nodejs-mongodb-and-Socket.io) repository. This app is built using Angular (version 6.1.3). This is SPA application, which uses ng-bootstrap. Server-side is written in Nodejs (version 8.9.4) and MongoDB(version 3.6.3).
 
-This project was generated with Angular CLI version 6.0.8.
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
 ## Explanation and Blog Post
 I have written a complete article on this application in three parts, for more details and Code explanation.

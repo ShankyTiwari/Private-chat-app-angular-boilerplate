@@ -1,29 +1,20 @@
-/*
-* Real time private chatting app using Angular 2, Nodejs, mongodb and Socket.io
-* @author Shashank Tiwari
-*/
-
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import {
-	AuthGuardService as AuthGuard
-} from './services/auth-guard.service';
+import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [{
-		path: 'auth',
-		loadChildren: 'app/components/auth/auth.module#AuthModule'
-	}, {
-		path: 'home',
-		loadChildren: 'app/components/home/home.module#HomeModule',
-		// canActivate: [AuthGuard]
-	}, {
-		path: '',
-		redirectTo: 'auth',
-		pathMatch: 'full'
-	}];
+	path: '',
+	redirectTo: '/pages/authentication',
+	pathMatch: 'full'
+}, {
+	path: 'pages',
+	loadChildren: './pages/pages.module#PagesModule'
+}, {
+	path: '**',
+	redirectTo: '/pages/authentication'
+}];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+	imports: [RouterModule.forRoot(routes)],
+	exports: [RouterModule],
 })
 export class AppRoutingModule { }

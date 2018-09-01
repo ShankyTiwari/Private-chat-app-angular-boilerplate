@@ -1,7 +1,7 @@
-import { SelectedUser } from './selected-user';
+import { User } from './user';
 
 export interface ChatListResponse {
-	chatList: Array<SelectedUser>;
+	chatList: User[];
 	error: boolean;
 	singleUser: boolean;
 	userDisconnected: boolean;

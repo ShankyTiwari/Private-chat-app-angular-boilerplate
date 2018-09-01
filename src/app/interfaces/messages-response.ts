@@ -1,6 +1,6 @@
-import { Messages } from './messages';
+import { Message } from './message';
 
 export interface MessagesResponse {
 	error: boolean;
-	messages: Messages[];
+	messages: Message[];
 }

@@ -1,15 +1,11 @@
-/*
-* Real time private chatting app using Angular 2, Nodejs, mongodb and Socket.io
-* @author Shashank Tiwari
-*/
-
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
+import { ServicesModule } from './services/services.module';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ServicesModule } from './services/services.module';
 
 @NgModule({
 	declarations: [
@@ -21,6 +17,7 @@ import { ServicesModule } from './services/services.module';
 		AppRoutingModule,
 		ServicesModule
 	],
+	providers: [],
 	bootstrap: [AppComponent]
 })
 export class AppModule { }
